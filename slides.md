@@ -88,7 +88,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ## Railway Oriented Programming
 
-# What is this?
+# What is it?
 
 <br/>
 
@@ -163,9 +163,9 @@ type UpdateRequest = {
 
 const updateUser = (requestBody: unknown, res: SomeResponse) => {
   validateRequest(request)
-    .andThen(getUserPure)
-    .andThen(updateUserPure)
-    .andThen(sendResponsePure);
+    .andThen(getUser)
+    .andThen(updateUser)
+    .andThen(sendResponse);
 };
 ```
 
@@ -301,9 +301,9 @@ const updateUser = (requestBody: unknown, res: SomeResponse) => {
 ```ts
 const updateUser = (requestBody: unknown, res: SomeResponse) => {
   validateRequest(request)
-    .andThen(getUserPure)
-    .andThen(updateUserPure)
-    .andThen(sendResponsePure);
+    .andThen(getUser)
+    .andThen(updateUser)
+    .andThen(sendResponse);
 };
 ```
 
