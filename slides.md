@@ -27,6 +27,9 @@ css: unocss
 
 (in Typescript)
 
+<div class="flex justify-center items-center">
+<img class="h-48 mt-12 self-center" src="/images/qrcode.png">
+</div>
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -35,11 +38,11 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <div class="px-24">
 
-## Intro
+## About me
 
 <br/>
 
-# About me
+# Laurenz Honauer
 
 <div grid="~ cols-2 gap-4">
 <div>
@@ -52,12 +55,10 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <div class="flex flex-col items-center justify-center">
 
-### Laurenz Honauer
-
 <br/>
 
 - Freelance Dev/Consulting
-- Co-Founder of <b>Superlight</b>
+- Co-Founder of <a traget="_blank" href="https://github.com/Superlight-Labs/Superlight"><b>Superlight</b></a>
 
 </div>
 </div>
@@ -383,22 +384,27 @@ const divideRoundNumber = (input: number): Result<number, Error> => {
 
 ### Cons
 
-- You have to write wrappers
 - Hard to understand for juniors
 - Small Prototypes are probably built faster without this
-- Maybe only makes sense, when you expect a complex application
+- You have to write wrappers
 
 <br/>
 
 ### Pros
 
-- Really Clean Code
+- Really Clean Code (Pit of Success)
 - Makes Error handling an explicit requirement
 - Checking Errors in Unit tests becomes way easier
 - Its kinda fun
 
 ---
 
-## class: "text-center"
-
 # The End
+
+<div class="flex justify-center items-center">
+<img class="h-48 mt-12 self-center" src="/images/qrcode.png">
+</div>
+
+[Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) <br/>
+[FP - Pits of Success](https://www.youtube.com/watch?v=US8QG9I1XW0) <br/>
+[FP/TS](https://www.youtube.com/watch?v=-U9HQembktY)
