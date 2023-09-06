@@ -348,38 +348,6 @@ const divideRoundNumber = (input: number): Result<number, Error> => {
 
 ---
 
-## How can this work?
-
-# Concept
-
-<div class="relative flex w-screen h-screen">
-  <div v-click-hide class="absolute flex flex-row justify-evenly items-center space-between" >
-    <img class="h-96 mr-32" src="/images/concept-js.png"/> 
-    <div>
-    Core JavaScript Features
-    </div>
-  </div>
-
-  <div v-click="[1, 2]" class="absolute flex flex-row justify-evenly items-center space-between" >
-    <img  class="h-96 mr-32" src="/images/concept-ts.png"/>
-    <div>
-      Core JavaScript Features <br/>
-    + Data Contracts (Types)
-    </div>
-
-  </div>
-  <div v-click="2" class="absolute flex flex flex-row justify-evenly items-center space-between"  >
-    <img  class="h-96 mr-32" src="/images/concept-railway.png"/>
-    <div>
-     Core JavaScript Features <br/>
-    + Data Contracts (Types) <br/>
-    + Behaviour Contracts (Results)
-    </div>
-
-  </div>
-</div>
----
-
 # Gist
 
 ### Cons
