@@ -348,6 +348,56 @@ const divideRoundNumber = (input: number): Result<number, Error> => {
 
 ---
 
+## Promises
+
+# Neverthrow
+
+```ts
+import { ResultAsync, ok, err } from "neverthrow";
+
+const fetchUser = (id: string): ResultAsync<User, Error> => {
+  const axiosRes = ResultAsync.fromPromise(
+    axios.get<User>(`/users/${userId}/`),
+    (error) => ({
+      error,
+      msg: "Whoops",
+    })
+  ).map((res) => res.data);
+};
+```
+
+---
+
+## Promises
+
+# Neverthrow
+
+```ts
+
+const fetchUser = (): ResultAsync<User, Error>
+...
+
+
+const fetchBlogPosts = (user: User): ResultAsync<BlogPost[], Error> => {
+  const axiosRes = ResultAsync.fromPromise(
+    axios.get<BlogPost[]>(`/users/${userId}/posts/`),
+    (error) => ({
+      error,
+      msg: "Whoops",
+    })
+  ).map((res) => res.data);
+}
+
+const getPostsForUser = (userId: string): ResultAsync<BlogPost[], Error> => {
+  return fetchUser(userId).andThen(fetchBlogPosts);
+}
+
+
+
+```
+
+---
+
 # Gist
 
 ### Cons
@@ -355,6 +405,7 @@ const divideRoundNumber = (input: number): Result<number, Error> => {
 - Hard to understand for juniors
 - Small Prototypes are probably built faster without this
 - You have to write wrappers
+- Problems with "await"
 
 <br/>
 
@@ -376,3 +427,7 @@ const divideRoundNumber = (input: number): Result<number, Error> => {
 [Railway Oriented Programming](https://fsharpforfunandprofit.com/rop/) <br/>
 [FP - Pits of Success](https://www.youtube.com/watch?v=US8QG9I1XW0) <br/>
 [FP/TS](https://www.youtube.com/watch?v=-U9HQembktY)
+
+```
+
+```
