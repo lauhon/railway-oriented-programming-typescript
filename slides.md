@@ -413,7 +413,7 @@ const getPostsForUser = (userId: string): ResultAsync<BlogPost[], Error> => {
 
 - Really Clean Code (Pit of Success)
 - Makes Error handling an explicit requirement
-- Checking Errors in Unit tests becomes way easier
+- Checking Errors in Unit tests becomes more straight forward
 - Its kinda fun
 
 ---
