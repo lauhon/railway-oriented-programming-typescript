@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: default
+theme: dracula
 
 # apply any windi css classes to the current slide
 class: "text-center"

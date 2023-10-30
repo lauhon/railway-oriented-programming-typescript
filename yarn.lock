@@ -721,35 +721,15 @@
     "@slidev/types" "0.43.0-beta.7"
     js-yaml "^4.1.0"
 
-"@slidev/theme-default@latest":
-  version "0.21.2"
-  resolved "https://registry.npmjs.org/@slidev/theme-default/-/theme-default-0.21.2.tgz"
-  integrity sha512-neUucFs2YrRZZd73QwvLTyRG/o1nerDFUR5t8YAmXVLTMzWfY71flQ6aAhjYf+WjsozYsOHcxi/pZtIzZ4VhTQ==
-  dependencies:
-    "@slidev/types" "^0.22.7"
-    codemirror-theme-vars "^0.1.1"
-    prism-theme-vars "^0.2.2"
-    theme-vitesse "^0.1.12"
-
-"@slidev/theme-seriph@latest":
-  version "0.21.3"
-  resolved "https://registry.npmjs.org/@slidev/theme-seriph/-/theme-seriph-0.21.3.tgz"
-  integrity sha512-cLya6O4hmcLHUhloCMPPoKMLX27Q+8M8pRS82BSsLXVeXTXrlpc3l3glx5VB738p+NQr7FgqFN6H2CXQRoVv9Q==
-  dependencies:
-    "@slidev/types" "^0.22.7"
-    codemirror-theme-vars "^0.1.1"
-    prism-theme-vars "^0.2.2"
-    theme-vitesse "^0.1.12"
-
 "@slidev/types@0.43.0-beta.7":
   version "0.43.0-beta.7"
   resolved "https://registry.npmjs.org/@slidev/types/-/types-0.43.0-beta.7.tgz"
   integrity sha512-7RLtGSITiJxDUXVQ3rWaL6/p8b0UjUv4veLOopU6bHaZS1Ea+ErMGGKMZRspdS3grDaTr3fzo9zTtmSmipLHig==
 
-"@slidev/types@^0.22.7":
-  version "0.22.7"
-  resolved "https://registry.npmjs.org/@slidev/types/-/types-0.22.7.tgz"
-  integrity sha512-mCVKQbcGTv6d6n9aHpYNp5U04HF+FMbpY083vqpJ6Folc805BB1Am02eubaW0J6nM+dSOu2dDgPY+kIjs75sAQ==
+"@slidev/types@^0.39.0":
+  version "0.39.0"
+  resolved "https://registry.yarnpkg.com/@slidev/types/-/types-0.39.0.tgz#aecb9cded7c48beba35a2404d024e410fcd29d8e"
+  integrity sha512-WYBCHewOncgIT9g4cxK7fNNqLSdjx8wnHPgpWj7pHHnV/ZxHxaONn7sMkUIlHB4DAGPptMsKIHN/QqQnEHQO7A==
 
 "@types/d3-scale-chromatic@^3.0.0":
   version "3.0.0"
@@ -3650,7 +3630,7 @@ prettier@^3.0.3:
   resolved "https://registry.npmjs.org/prettier/-/prettier-3.0.3.tgz"
   integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
 
-prism-theme-vars@^0.2.2:
+prism-theme-vars@^0.2.4:
   version "0.2.4"
   resolved "https://registry.npmjs.org/prism-theme-vars/-/prism-theme-vars-0.2.4.tgz"
   integrity sha512-B3Pht+GCT87sZph7hMRLlCQXzCM0awW7Rhk08RavpqRW4LEQOeqN0uMG4QCWkul2tr8PB61YAOJGUrEW+1uuJA==
@@ -3881,6 +3861,16 @@ slash@^4.0.0:
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
+slidev-theme-dracula@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/slidev-theme-dracula/-/slidev-theme-dracula-0.1.1.tgz#b4ce10b4d25798c85baf26fff5c0b8f3b1b8a56d"
+  integrity sha512-fyX/G2T8psQ3CUPW55DiVK5sXV85X+aXIp+Swv58Eq0Fpr//IvoLfnI2kxwV4mgFMT1L0OSGQ45Tr1ivbaYKRg==
+  dependencies:
+    "@slidev/types" "^0.39.0"
+    codemirror-theme-vars "^0.1.1"
+    prism-theme-vars "^0.2.4"
+    theme-vitesse "^0.6.2"
+
 source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz"
@@ -4006,10 +3996,10 @@ tar@^6.1.13:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-theme-vitesse@^0.1.12:
-  version "0.1.14"
-  resolved "https://registry.npmjs.org/theme-vitesse/-/theme-vitesse-0.1.14.tgz"
-  integrity sha512-b5s+Zpfaw5+djoCJ9AEbcTbpiTlLsOvGM9oblDmmWRGWNqg9oXtEYO/uwubwx77novHBI6zNuwZRHKNlAIBo4A==
+theme-vitesse@^0.6.2:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/theme-vitesse/-/theme-vitesse-0.6.4.tgz#6dcbe2b2cbcf80b62eb33dfec405b3f93cbfed08"
+  integrity sha512-uCn8emUUfEOKoukSZz0GqxB5q+gQ2wVEXx6+cCKWbXIjW56afkozVdosVSqXkRuML7i77tMmzMbvzcY/2uc01w==
 
 titleize@^3.0.0:
   version "3.0.0"
